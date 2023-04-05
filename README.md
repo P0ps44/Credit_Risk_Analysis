@@ -1,21 +1,56 @@
 # Credit_Risk_Analysis
 
+## Overview of the analysis:
+
+Credit risk is an inherently unbalanced classification problem and this analysis will use machine learning and a number of libraries to build and evaluate models using resampling. The main program I used was jupyter notebooks and the sklearn libraries. The data will be a credit card credit dataset from LendingClub.
+
+## Results:
+
+### Naive Random Oversampling
+* Balanced Accuracy Score: 0.6400737711750595
+
+* Precision Score: high_risk -> 0.01 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> 0.74
+
+### SMOTE Oversampling
+* Balanced Accuracy Score: 0.6611371087997481
+
+* Precision Score: high_risk -> 0.01 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> 0.69
+
+### Undersampling
+* Balanced Accuracy Score: 0.5442369453268994
+
+* Precision Score: high_risk -> 0.01 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> 0.40 
+
+### Combination (Over and Under) Sampling
+* Balanced Accuracy Score: 0.6408034366345896
+
+* Precision Score: high_risk -> 0.01 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> 0.58
+
+### Balanced Random Forest Classifier
+* Balanced Accuracy Score: 0.7885466545953005
+
+* Precision Score: high_risk -> 0.03 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> 0.87
+
+### Easy Ensemble AdaBoost Classifier
+* Balanced Accuracy Score: 0.9316600714093861
+
+* Precision Score: high_risk -> 0.09 low_risk -> 1.00 
+
+* Recall Score: Average/Total -> .094
 
 
-Data : Video Games Amazon
 
-Overview of the analysis:
-The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review. I chose the video game datasets to analyze and used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. I also used Google Colab with PySpark to determine if there is any bias toward favorable reviews from Vine members in my dataset.
 
-Results:
-This is an image
+## Summary:
 
-Out of the total of 50,565 reviews, 94 of them were paid and 40,471 of them were unpaid.
 
-Out of those paid and unpaid reviews, 48 of them were five-star paid reviews and 15,663 were five-star unpaid reviews.
-
-This is an image
-
-So calculating the results show that 51% of paid vine reviews were five-star and 38% were unpaid five star reviews.
-Summary:
-According to the findings, vine users were rather biased as half of them had five-star ratings. Even though there were more non-vine users, 38% still had five-star reviews. It only goes to show that the majority of customers who are happy with their product will give it five stars. With this information, we may examine another data set to determine whether it is comparable to the video game set.
