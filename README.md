@@ -50,5 +50,5 @@ Credit risk is an inherently unbalanced classification problem and this analysis
 
 ## Summary:
 After using all six models, the "Easy Ensemble AdaBoost Classifier" had the best results with a balanced accuarcy score of 93%. The model also have a .009 high risk precison score which was better than any other model. The second closest high risk precision score was using the Balanced Random Forest Classifier at .003.
-Lastly, easy ensemble model recall score was at an average of .094 which was the best compared to the other models. So with this analysis, I would recommend using the Easy Ensemble AdaBoost Classifier model. 
+Lastly, easy ensemble model recall score was at an average of .094, which was the best compared to the other models. So with this analysis, I would recommend using the Easy Ensemble AdaBoost Classifier model. 
 
